@@ -8,6 +8,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: ocs-storagecluster-ceph-rbd
   volumeMode: Filesystem
   resources:
     requests:
