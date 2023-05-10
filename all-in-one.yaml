@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-redis
+  name: redis
   labels:
     appname: quiz
     placement: quiz-placement
