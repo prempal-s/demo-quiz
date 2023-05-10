@@ -5,7 +5,8 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: "rook-ceph-block"
+  storageClassName: ocs-storagecluster-ceph-rbd
+  volumeMode: Filesystem
   resources:
     requests:
       storage: 2Gi
