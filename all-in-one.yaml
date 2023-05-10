@@ -1,4 +1,17 @@
 apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pvc-redis
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: ocs-storagecluster-ceph-rbd
+  volumeMode: Filesystem
+---
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: redis
