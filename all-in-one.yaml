@@ -67,7 +67,7 @@ spec:
     spec:
       containers:
 #      - image: quay.io/centos7/redis-5-centos7
-       - image: quay.io/kahlai/redis:hack
+      - image: quay.io/kahlai/redis:hack
         name: redis
         env:
         - name: REDIS_PASSWORD
